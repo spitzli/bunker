@@ -1,0 +1,23 @@
+{
+  "Route": {
+    "prefix": ["route", "new-route", "r"],
+    "body": [
+      "import { Context } from \"types\"",
+      "import { Router } from \"oak\";",
+      "",
+      "new Router().get(\"/${1:path}\", async (context: Context) => {",
+      "",
+      "})"
+    ],
+    "description": "Create a new route."
+  },
+  "Logger": {
+    "prefix": ["logger", "l"],
+    "body": ["const log = logger({ name: \"${1:name}\", logLevel: configs.general.env === \"dev\" ? 0 : 1 });"]
+  },
+  "Import": {
+    "prefix": ["import", "i"],
+    "body": ["import { ${1:name} } from \"${2:path}\";"],
+    "description": "Import a module."
+  }
+}

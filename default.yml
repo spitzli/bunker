@@ -1,0 +1,13 @@
+name: string
+version: string
+authors: string[]
+website: ?string
+description: ?string
+permissions: ?object[]
+  - permission.name: ?object
+      description: ?string
+      default: ?boolean
+dependencies: ?string[]
+router: ?object
+  prefix: ?string
+  api: ?boolean

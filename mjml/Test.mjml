@@ -1,0 +1,163 @@
+<mjml owa="desktop" version="4.10.1">
+  <mj-head>
+    <mj-font
+      href="https://fonts.googleapis.com/css?family=Exo"
+      name="Exo"
+    ></mj-font>
+    <mj-preview> Test </mj-preview>
+  </mj-head>
+  <mj-body background-color="#00" color="#55575d" font-family="Exo">
+    <mj-section
+      background-repeat="repeat"
+      padding="20px 0"
+      text-align="center"
+      vertical-align="top"
+    >
+      <mj-column>
+        <mj-image
+          align="center"
+          alt="LCH Cloud"
+          border-radius="0"
+          border="none"
+          container-background-color="transparent"
+          height="auto"
+          href=""
+          padding-left="25px"
+          padding-right="25px"
+          padding="10px 25px 10px 25px"
+          src="https://cdn.discordapp.com/attachments/488763177493069840/944408151682351164/Logo_Wei_BG_Trans.png"
+          target="_blank"
+          title=""
+          width="500px"
+        ></mj-image>
+        <mj-divider
+          border-color="#156cdd"
+          border-style="double"
+          border-width="2px"
+          container-background-color="transparent"
+          padding-left="25px"
+          padding-right="25px"
+          padding="10px 25px 10px 25px"
+          width="100%"
+        ></mj-divider>
+      </mj-column>
+    </mj-section>
+    <mj-section
+      background-repeat="repeat"
+      padding="20px 0"
+      text-align="center"
+      vertical-align="top"
+    >
+      <mj-column>
+        <mj-text
+          align="left"
+          color="#000000"
+          font-family="Arial, sans-serif"
+          font-size="13px"
+          letter-spacing="normal"
+          padding-bottom="0px"
+          padding-top="0px"
+          padding="10px 25px"
+        ></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section
+      background-color="transparent"
+      background-repeat="repeat"
+      padding-left="0px"
+      padding-right="0px"
+      padding="20px 0px 20px 0px"
+      text-align="center"
+      vertical-align="middle"
+    >
+      <mj-column vertical-align="middle">
+        <mj-social
+          align="center"
+          font-family="Ubuntu, Helvetica, Arial, sans-serif"
+          font-size="13px"
+          icon-size="20px"
+          line-height="22px"
+          mode="horizontal"
+          padding="10px 25px"
+          text-decoration="none"
+          text-mode="true"
+        >
+          <mj-social-element
+            background-color="#405DE6"
+            href="[[SHORT_PERMALINK]]"
+            name="instagram-noshare"
+            src="https://www.mailjet.com/images/theme/v1/icons/ico-social/instagram.png"
+          >
+            Instagram
+          </mj-social-element>
+          <mj-social-element
+            background-color="#1DA1F2"
+            href="[[SHORT_PERMALINK]]"
+            name="twitter-noshare"
+            src="https://www.mailjet.com/images/theme/v1/icons/ico-social/twitter.png"
+          >
+            Twitter
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section
+      background-repeat="repeat"
+      padding="20px 0px 20px 0px"
+      text-align="center"
+      vertical-align="top"
+    >
+      <mj-column padding="0">
+        <mj-text
+          align="center"
+          color="#000000"
+          font-family="Arial, sans-serif"
+          font-size="11px"
+          letter-spacing="normal"
+          line-height="22px"
+          padding-bottom="0px"
+          padding-top="0px"
+          padding="10px 25px"
+        >
+          <p
+            class="text-build-content"
+            data-testid="zkqukmWXncb"
+            style="margin: 10px 0; margin-top: 10px; margin-bottom: 10px"
+          >
+            <span style="font-family: Exo"
+              >Diese E-Mail wurde an [[EMAIL_TO]] verschickt. Wenn Sie keine
+              weiteren E-Mails erhalten möchten, </span
+            ><a
+              class="link-build-content"
+              style="color: inherit"
+              target="_blank"
+              href="[[UNSUB_LINK_DE]]"
+              ><span style="font-family: Exo"
+                >können Sie sich hier abmelden</span
+              ></a
+            ><span style="font-family: Exo">.</span>
+          </p>
+        </mj-text>
+        <mj-text
+          align="center"
+          color="#000000"
+          font-family="Arial, sans-serif"
+          font-size="11px"
+          letter-spacing="normal"
+          line-height="22px"
+          padding-bottom="0px"
+          padding-top="0px"
+          padding="10px 25px"
+        >
+          <p
+            class="text-build-content"
+            data-testid="PWiyTYIiAK4"
+            style="margin: 10px 0; margin-top: 10px; margin-bottom: 10px"
+          >
+            <span style="font-family: Exo">CH</span>
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

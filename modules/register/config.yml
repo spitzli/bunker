@@ -1,0 +1,11 @@
+name: Register
+version: 1.0.0
+authors:
+  - Newt
+website: newt.ch
+description: The Register for LCH Cloud SCP
+dependencies:
+  - Core
+router:
+  prefix: /register
+  api: true

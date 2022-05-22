@@ -1,0 +1,7 @@
+name: Core
+version: 1.0.0
+authors:
+  - Spitzli Development
+website: spitzli.dev
+description: The Core for LCH Cloud SCP
+router:
