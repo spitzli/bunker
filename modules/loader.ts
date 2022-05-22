@@ -316,6 +316,5 @@ export default class ModuleLoader {
 }
 
 log.setLevel(0);
-console.time("time");
+
 await ModuleLoader.load();
-console.timeEnd("time");
