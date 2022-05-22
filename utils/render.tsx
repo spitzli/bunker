@@ -29,7 +29,7 @@ export function render(context: Context, body: any) {
             rel="stylesheet"
             href="/plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
           />
-          <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js" />
           <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css"
@@ -62,15 +62,15 @@ export function render(context: Context, body: any) {
               </div>
             </footer>
           </div>
-          <script src="/plugins/jquery/jquery.min.js"></script>
-          <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-          <script src="/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
-          <script src="/plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
-          <script src="/plugins/raphael/raphael.min.js"></script>
-          <script src="/plugins/jquery-mapael/jquery.mapael.min.js"></script>
-          <script src="/plugins/jquery-mapael/maps/usa_states.min.js"></script>
-          <script src="/plugins/chart.js/Chart.min.js"></script>
+          <script src="/plugins/jquery/jquery.min.js" />
+          <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js" />
+          <script src="/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js" />
+          <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js" />
+          <script src="/plugins/jquery-mousewheel/jquery.mousewheel.js" />
+          <script src="/plugins/raphael/raphael.min.js" />
+          <script src="/plugins/jquery-mapael/jquery.mapael.min.js" />
+          <script src="/plugins/jquery-mapael/maps/usa_states.min.js" />
+          <script src="/plugins/chart.js/Chart.min.js" />
         </body>
       </html>
     );
