@@ -34,7 +34,7 @@ export default function Index() {
             <div className="col-12 col-sm-6 col-md-3">
               <div className="info-box">
                 <span className="info-box-icon bg-info elevation-1">
-                  <i className="fas fa-cog"></i>
+                  <i className="fas fa-cog" />
                 </span>
 
                 <div className="info-box-content">
@@ -52,7 +52,7 @@ export default function Index() {
             <div className="col-12 col-sm-6 col-md-3">
               <div className="info-box mb-3">
                 <span className="info-box-icon bg-danger elevation-1">
-                  <i className="fas fa-thumbs-up"></i>
+                  <i className="fas fa-thumbs-up" />
                 </span>
 
                 <div className="info-box-content">
@@ -66,12 +66,12 @@ export default function Index() {
             {/*  <!-- /.col --> */}
 
             {/*  <!-- fix for small devices only --> */}
-            <div className="clearfix hidden-md-up"></div>
+            <div className="clearfix hidden-md-up" />
 
             <div className="col-12 col-sm-6 col-md-3">
               <div className="info-box mb-3">
                 <span className="info-box-icon bg-success elevation-1">
-                  <i className="fas fa-shopping-cart"></i>
+                  <i className="fas fa-shopping-cart" />
                 </span>
 
                 <div className="info-box-content">
@@ -86,7 +86,7 @@ export default function Index() {
             <div className="col-12 col-sm-6 col-md-3">
               <div className="info-box mb-3">
                 <span className="info-box-icon bg-warning elevation-1">
-                  <i className="fas fa-users"></i>
+                  <i className="fas fa-users" />
                 </span>
 
                 <div className="info-box-content">
@@ -113,7 +113,7 @@ export default function Index() {
                       className="btn btn-tool"
                       data-card-widget="collapse"
                     >
-                      <i className="fas fa-minus"></i>
+                      <i className="fas fa-minus" />
                     </button>
                     <div className="btn-group">
                       <button
@@ -121,7 +121,7 @@ export default function Index() {
                         className="btn btn-tool dropdown-toggle"
                         data-toggle="dropdown"
                       >
-                        <i className="fas fa-wrench"></i>
+                        <i className="fas fa-wrench" />
                       </button>
                       <div
                         className="dropdown-menu dropdown-menu-right"
@@ -136,7 +136,7 @@ export default function Index() {
                         <a href="#" className="dropdown-item">
                           Something else here
                         </a>
-                        <a className="dropdown-divider"></a>
+                        <a className="dropdown-divider" />
                         <a href="#" className="dropdown-item">
                           Separated link
                         </a>
@@ -147,7 +147,7 @@ export default function Index() {
                       className="btn btn-tool"
                       data-card-widget="remove"
                     >
-                      <i className="fas fa-times"></i>
+                      <i className="fas fa-times" />
                     </button>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ export default function Index() {
                           id="salesChart"
                           height="180"
                           style={{ height: "180px" }}
-                        ></canvas>
+                         />
                       </div>
                       {/*  <!-- /.chart-responsive --> */}
                     </div>
@@ -184,7 +184,7 @@ export default function Index() {
                           <div
                             className="progress-bar bg-primary"
                             style={{ width: "80%" }}
-                          ></div>
+                           />
                         </div>
                       </div>
                       {/*  <!-- /.progress-group --> */}
@@ -198,7 +198,7 @@ export default function Index() {
                           <div
                             className="progress-bar bg-danger"
                             style={{ width: "75%" }}
-                          ></div>
+                           />
                         </div>
                       </div>
 
@@ -214,7 +214,7 @@ export default function Index() {
                           <div
                             className="progress-bar bg-success"
                             style={{ width: "60%" }}
-                          ></div>
+                           />
                         </div>
                       </div>
 
@@ -228,7 +228,7 @@ export default function Index() {
                           <div
                             className="progress-bar bg-warning"
                             style={{ width: "50%" }}
-                          ></div>
+                           />
                         </div>
                       </div>
                       {/*  <!-- /.progress-group --> */}
@@ -243,7 +243,7 @@ export default function Index() {
                     <div className="col-sm-3 col-6">
                       <div className="description-block border-right">
                         <span className="description-percentage text-success">
-                          <i className="fas fa-caret-up"></i> 17%
+                          <i className="fas fa-caret-up" /> 17%
                         </span>
                         <h5 className="description-header">$35,210.43</h5>
                         <span className="description-text">TOTAL REVENUE</span>
@@ -254,7 +254,7 @@ export default function Index() {
                     <div className="col-sm-3 col-6">
                       <div className="description-block border-right">
                         <span className="description-percentage text-warning">
-                          <i className="fas fa-caret-left"></i> 0%
+                          <i className="fas fa-caret-left" /> 0%
                         </span>
                         <h5 className="description-header">$10,390.90</h5>
                         <span className="description-text">TOTAL COST</span>
@@ -265,7 +265,7 @@ export default function Index() {
                     <div className="col-sm-3 col-6">
                       <div className="description-block border-right">
                         <span className="description-percentage text-success">
-                          <i className="fas fa-caret-up"></i> 20%
+                          <i className="fas fa-caret-up" /> 20%
                         </span>
                         <h5 className="description-header">$24,813.53</h5>
                         <span className="description-text">TOTAL PROFIT</span>
@@ -276,7 +276,7 @@ export default function Index() {
                     <div className="col-sm-3 col-6">
                       <div className="description-block">
                         <span className="description-percentage text-danger">
-                          <i className="fas fa-caret-down"></i> 18%
+                          <i className="fas fa-caret-down" /> 18%
                         </span>
                         <h5 className="description-header">1200</h5>
                         <span className="description-text">
@@ -311,14 +311,14 @@ export default function Index() {
                       className="btn btn-tool"
                       data-card-widget="collapse"
                     >
-                      <i className="fas fa-minus"></i>
+                      <i className="fas fa-minus" />
                     </button>
                     <button
                       type="button"
                       className="btn btn-tool"
                       data-card-widget="remove"
                     >
-                      <i className="fas fa-times"></i>
+                      <i className="fas fa-times" />
                     </button>
                   </div>
                 </div>
@@ -334,7 +334,7 @@ export default function Index() {
                         id="world-map-markers"
                         style={{ height: "325px", overflow: "hidden" }}
                       >
-                        <div className="map"></div>
+                        <div className="map" />
                       </div>
                     </div>
                     <div className="card-pane-right bg-success pt-2 pb-2 pl-4 pr-4">
@@ -389,7 +389,7 @@ export default function Index() {
                           className="btn btn-tool"
                           data-card-widget="collapse"
                         >
-                          <i className="fas fa-minus"></i>
+                          <i className="fas fa-minus" />
                         </button>
                         <button
                           type="button"
@@ -397,14 +397,14 @@ export default function Index() {
                           title="Contacts"
                           data-widget="chat-pane-toggle"
                         >
-                          <i className="fas fa-comments"></i>
+                          <i className="fas fa-comments" />
                         </button>
                         <button
                           type="button"
                           className="btn btn-tool"
                           data-card-widget="remove"
                         >
-                          <i className="fas fa-times"></i>
+                          <i className="fas fa-times" />
                         </button>
                       </div>
                     </div>
@@ -697,14 +697,14 @@ export default function Index() {
                           className="btn btn-tool"
                           data-card-widget="collapse"
                         >
-                          <i className="fas fa-minus"></i>
+                          <i className="fas fa-minus" />
                         </button>
                         <button
                           type="button"
                           className="btn btn-tool"
                           data-card-widget="remove"
                         >
-                          <i className="fas fa-times"></i>
+                          <i className="fas fa-times" />
                         </button>
                       </div>
                     </div>
@@ -817,14 +817,14 @@ export default function Index() {
                       className="btn btn-tool"
                       data-card-widget="collapse"
                     >
-                      <i className="fas fa-minus"></i>
+                      <i className="fas fa-minus" />
                     </button>
                     <button
                       type="button"
                       className="btn btn-tool"
                       data-card-widget="remove"
                     >
-                      <i className="fas fa-times"></i>
+                      <i className="fas fa-times" />
                     </button>
                   </div>
                 </div>
@@ -1001,7 +1001,7 @@ export default function Index() {
               {/*  <!-- Info Boxes Style 2 --> */}
               <div className="info-box mb-3 bg-warning">
                 <span className="info-box-icon">
-                  <i className="fas fa-tag"></i>
+                  <i className="fas fa-tag" />
                 </span>
 
                 <div className="info-box-content">
@@ -1013,7 +1013,7 @@ export default function Index() {
               {/*  <!-- /.info-box --> */}
               <div className="info-box mb-3 bg-success">
                 <span className="info-box-icon">
-                  <i className="far fa-heart"></i>
+                  <i className="far fa-heart" />
                 </span>
 
                 <div className="info-box-content">
@@ -1025,7 +1025,7 @@ export default function Index() {
               {/*  <!-- /.info-box --> */}
               <div className="info-box mb-3 bg-danger">
                 <span className="info-box-icon">
-                  <i className="fas fa-cloud-download-alt"></i>
+                  <i className="fas fa-cloud-download-alt" />
                 </span>
 
                 <div className="info-box-content">
@@ -1037,7 +1037,7 @@ export default function Index() {
               {/*  <!-- /.info-box --> */}
               <div className="info-box mb-3 bg-info">
                 <span className="info-box-icon">
-                  <i className="far fa-comment"></i>
+                  <i className="far fa-comment" />
                 </span>
 
                 <div className="info-box-content">
@@ -1058,14 +1058,14 @@ export default function Index() {
                       className="btn btn-tool"
                       data-card-widget="collapse"
                     >
-                      <i className="fas fa-minus"></i>
+                      <i className="fas fa-minus" />
                     </button>
                     <button
                       type="button"
                       className="btn btn-tool"
                       data-card-widget="remove"
                     >
-                      <i className="fas fa-times"></i>
+                      <i className="fas fa-times" />
                     </button>
                   </div>
                 </div>
@@ -1074,7 +1074,7 @@ export default function Index() {
                   <div className="row">
                     <div className="col-md-8">
                       <div className="chart-responsive">
-                        <canvas id="pieChart" height="150"></canvas>
+                        <canvas id="pieChart" height="150" />
                       </div>
                       {/*  <!-- ./chart-responsive --> */}
                     </div>
@@ -1082,22 +1082,22 @@ export default function Index() {
                     <div className="col-md-4">
                       <ul className="chart-legend clearfix">
                         <li>
-                          <i className="far fa-circle text-danger"></i> Chrome
+                          <i className="far fa-circle text-danger" /> Chrome
                         </li>
                         <li>
-                          <i className="far fa-circle text-success"></i> IE
+                          <i className="far fa-circle text-success" /> IE
                         </li>
                         <li>
-                          <i className="far fa-circle text-warning"></i> FireFox
+                          <i className="far fa-circle text-warning" /> FireFox
                         </li>
                         <li>
-                          <i className="far fa-circle text-info"></i> Safari
+                          <i className="far fa-circle text-info" /> Safari
                         </li>
                         <li>
-                          <i className="far fa-circle text-primary"></i> Opera
+                          <i className="far fa-circle text-primary" /> Opera
                         </li>
                         <li>
-                          <i className="far fa-circle text-secondary"></i>
+                          <i className="far fa-circle text-secondary" />
                           Navigator
                         </li>
                       </ul>
@@ -1113,7 +1113,7 @@ export default function Index() {
                       <a href="#" className="nav-link">
                         United States of America
                         <span className="float-right text-danger">
-                          <i className="fas fa-arrow-down text-sm"></i>
+                          <i className="fas fa-arrow-down text-sm" />
                           12%
                         </span>
                       </a>
@@ -1122,7 +1122,7 @@ export default function Index() {
                       <a href="#" className="nav-link">
                         India
                         <span className="float-right text-success">
-                          <i className="fas fa-arrow-up text-sm"></i> 4%
+                          <i className="fas fa-arrow-up text-sm" /> 4%
                         </span>
                       </a>
                     </li>
@@ -1130,7 +1130,7 @@ export default function Index() {
                       <a href="#" className="nav-link">
                         China
                         <span className="float-right text-warning">
-                          <i className="fas fa-arrow-left text-sm"></i> 0%
+                          <i className="fas fa-arrow-left text-sm" /> 0%
                         </span>
                       </a>
                     </li>
@@ -1151,14 +1151,14 @@ export default function Index() {
                       className="btn btn-tool"
                       data-card-widget="collapse"
                     >
-                      <i className="fas fa-minus"></i>
+                      <i className="fas fa-minus" />
                     </button>
                     <button
                       type="button"
                       className="btn btn-tool"
                       data-card-widget="remove"
                     >
-                      <i className="fas fa-times"></i>
+                      <i className="fas fa-times" />
                     </button>
                   </div>
                 </div>

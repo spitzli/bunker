@@ -21,7 +21,7 @@ export default function Layout(body: any) {
           rel="stylesheet"
           href="/plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
         />
-        <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css"
