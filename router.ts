@@ -12,7 +12,11 @@ ModuleLoader.cache.forEach((module) => {
   const start = Date.now();
   if (module.config.router === undefined) return;
   router.use(module.router!.routes());
-  logger.info(`Register Module Routes from ${module.config.name} || ${formatTime(Date.now() - start)}`);
+  logger.info(
+    `Register Module Routes from ${module.config.name} || ${formatTime(
+      Date.now() - start
+    )}`
+  );
 });
 
 logger.info(`All Routes Registerd || ${formatTime(Date.now() - start)}`);

@@ -3,7 +3,12 @@ import { SmtpClient } from "../../deps.ts";
 
 const client = new SmtpClient();
 
-export async function sendMail(mail: string, subject: string, content: string, html: string) {
+export async function sendMail(
+  mail: string,
+  subject: string,
+  content: string,
+  html: string
+) {
   await client.connectTLS({
     hostname: configs.mail.server,
     port: configs.mail.port,

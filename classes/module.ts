@@ -8,14 +8,21 @@ import { Context, Config } from "types";
 import { logger } from "utils";
 import { configs } from "config";
 
-const log = logger({ name: "Module", logLevel: configs.general.env === "dev" ? 0 : 1 });
+const log = logger({
+  name: "Module",
+  logLevel: configs.general.env === "dev" ? 0 : 1,
+});
 
 export default abstract class Module {
   config: Config;
   constructor(path: string) {
-    this.config = parse(new TextDecoder("utf-8").decode(Deno.readFileSync(`${path}/config.yml`))) as Config;
-    if (this.config.router !== undefined) this.router = new Router({ prefix: this.config.router?.prefix });
-    if (this.config.router?.api !== undefined) this.api = new Router({ prefix: "/api" });
+    this.config = parse(
+      new TextDecoder("utf-8").decode(Deno.readFileSync(`${path}/config.yml`))
+    ) as Config;
+    if (this.config.router !== undefined)
+      this.router = new Router({ prefix: this.config.router?.prefix });
+    if (this.config.router?.api !== undefined)
+      this.api = new Router({ prefix: "/api" });
     this.db = db;
   }
 
@@ -33,25 +40,36 @@ export default abstract class Module {
 
   abstract load(): Promise<void> | void;
   abstract unload(): Promise<void> | void;
-  public async depend(cache: Map<string, Module>, stack: Set<string>): Promise<boolean> {
+  public async depend(
+    cache: Map<string, Module>,
+    stack: Set<string>
+  ): Promise<boolean> {
     if (stack.has(this.config.name)) {
       log.error(
         `detected loop in ${[...stack.values(), this.config.name]
-          .map((mod) => bold((mod === this.config.name ? brightBlue : brightYellow)(mod)))
-          .join(bold(brightRed(" -> ")))}`,
+          .map((mod) =>
+            bold((mod === this.config.name ? brightBlue : brightYellow)(mod))
+          )
+          .join(bold(brightRed(" -> ")))}`
       );
       return false;
     }
     stack.add(this.config.name);
-    const missingDependencies = this.dependencies.filter((dependency: string) => !cache.get(dependency));
+    const missingDependencies = this.dependencies.filter(
+      (dependency: string) => !cache.get(dependency)
+    );
     if (missingDependencies.length > 0) {
       log.error(
-        `cannot find ${missingDependencies.length === 1 ? "dependency" : "dependendcies"} ${missingDependencies
+        `cannot find ${
+          missingDependencies.length === 1 ? "dependency" : "dependendcies"
+        } ${missingDependencies
           .map((dep) => bold(brightRed(dep)))
-          .join(", ")} of ${bold(brightYellow(this.config.name))}`,
+          .join(", ")} of ${bold(brightYellow(this.config.name))}`
       );
 
-      log.info(`skip ${bold(brightYellow(this.config.name))} and continue loading...`);
+      log.info(
+        `skip ${bold(brightYellow(this.config.name))} and continue loading...`
+      );
 
       return false;
     }
@@ -68,7 +86,9 @@ export default abstract class Module {
 
       if (!module.loaded) {
         if (!(await module.depend(cache, stack))) {
-          log.error(`module ${bold(brightYellow(dependency))} could not be loaded`);
+          log.error(
+            `module ${bold(brightYellow(dependency))} could not be loaded`
+          );
 
           return false;
         }

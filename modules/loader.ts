@@ -7,7 +7,10 @@ import Metadata, { Permission } from "../classes/types/config.ts";
 import Validation from "../classes/types/validation.ts";
 import { configs } from "config";
 
-const log = logger({ name: "Module Loader", logLevel: configs.general.env === "dev" ? 0 : 1 });
+const log = logger({
+  name: "Module Loader",
+  logLevel: configs.general.env === "dev" ? 0 : 1,
+});
 
 export default class ModuleLoader {
   static readonly cache: Map<string, Module> = new Map();
@@ -16,8 +19,15 @@ export default class ModuleLoader {
       includeFiles: false,
       maxDepth: 1,
     })) {
-      if (entry.name === "modules" || entry.name === "database" || entry.name === "imports") continue;
-      const module: Module = new (await import(`./${entry.name}/mod.tsx`)).default(`./src/modules/${entry.name}`);
+      if (
+        entry.name === "modules" ||
+        entry.name === "database" ||
+        entry.name === "imports"
+      )
+        continue;
+      const module: Module = new (
+        await import(`./${entry.name}/mod.tsx`)
+      ).default(`./src/modules/${entry.name}`);
       if (
         !ModuleLoader.validateConfigs(module.config, [
           {
@@ -113,7 +123,10 @@ export default class ModuleLoader {
         ])
       ) {
         log.error(
-          `module ${bold(brightYellow(module.config.name)) || bold(brightYellow("undefined"))} could not be loaded`,
+          `module ${
+            bold(brightYellow(module.config.name)) ||
+            bold(brightYellow("undefined"))
+          } could not be loaded`
         );
 
         continue;
@@ -125,7 +138,9 @@ export default class ModuleLoader {
       if (module.loaded) continue;
 
       if (!(await module.depend(this.cache, new Set<string>()))) {
-        log.error(`module ${bold(brightYellow(module.config.name))} could not be loaded`);
+        log.error(
+          `module ${bold(brightYellow(module.config.name))} could not be loaded`
+        );
 
         continue;
       }
@@ -266,7 +281,9 @@ export default class ModuleLoader {
         }
 
         if (typeof config !== (isArray ? "object" : type)) {
-          log.error(`typeof ${key} must be a ${isArray ? `${type} array` : type}`);
+          log.error(
+            `typeof ${key} must be a ${isArray ? `${type} array` : type}`
+          );
           return false;
         }
 
