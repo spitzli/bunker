@@ -7,14 +7,14 @@ import { render } from "../../utils/render.tsx";
 
 export default class BugTracker extends Module {
   load() {
-    console.log("I AM LOADED BUG");
-    console.log(this.config.name);
+    
+    
     this.router?.get("/test", (context) => {
       return render(context, <App />);
     });
   }
   unload() {
-    console.log("I AM UNLODAED BUG");
+    
     //database.close();
   }
 }
