@@ -318,4 +318,3 @@ export default class ModuleLoader {
 log.setLevel(0);
 
 await ModuleLoader.load();
-
