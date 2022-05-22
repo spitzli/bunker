@@ -32,8 +32,14 @@ export { connect } from "https://deno.land/x/redis@v0.24.0/mod.ts";
 export * as mammoth from "https://denopkg.com/itohatweb/mammoth@cae278d1e4deb0e9c4660e586492bddbd891880a/mod.ts";
 export { Pool } from "https://deno.land/x/postgres@v0.11.2/mod.ts";
 export type { ConnectionOptions } from "https://deno.land/x/postgres@v0.11.2/mod.ts";
-export { AbstractMigration, ClientPostgreSQL } from "https://deno.land/x/nessie@2.0.4/mod.ts";
-export type { NessieConfig, PostgreSQLClientOptions } from "https://deno.land/x/nessie@2.0.4/mod.ts";
+export {
+  AbstractMigration,
+  ClientPostgreSQL,
+} from "https://deno.land/x/nessie@2.0.4/mod.ts";
+export type {
+  NessieConfig,
+  PostgreSQLClientOptions,
+} from "https://deno.land/x/nessie@2.0.4/mod.ts";
 
 export * as bcrypt from "https://deno.land/x/bcrypt@v0.2.4/mod.ts";
 export { SmtpClient } from "https://deno.land/x/smtp@v0.7.0/mod.ts";
