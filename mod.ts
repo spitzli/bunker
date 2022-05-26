@@ -35,9 +35,11 @@ const app = new Application<StateContext>();
 
 app.addEventListener("listen", ({ port }) => {
   logger.info(
-    `Server is Ready and Listen on ${configs.general.hostname == "localhost" ? "http" : "https"}://${
-      configs.general.hostname
-    }:${port} || ${formatTime(Date.now() - start)}`,
+    `Server is Ready and Listen on ${
+      configs.general.hostname == "localhost" ? "http" : "https"
+    }://${configs.general.hostname}:${port} || ${formatTime(
+      Date.now() - start
+    )}`
   );
 });
 
