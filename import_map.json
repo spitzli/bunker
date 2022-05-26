@@ -3,6 +3,7 @@
     "bcrypt": "https://deno.land/x/bcrypt@v0.2.4/mod.ts",
     "builder": "https://deno.land/x/sql_builder@v1.9.1/mod.ts",
     "react": "https://esm.sh/react",
+    "preact": "https://esm.sh/preact",
     "config": "./configs.ts",
     "constants": "./constants/mod.ts",
     "database": "./database/database.ts",

@@ -1,4 +1,4 @@
-import { Application } from "./deps.ts";
+import { Application } from "oak";
 import { formatTime, logger } from "./src/utils/mod.ts";
 import { router } from "./router.ts";
 import { StateContext } from "./src/types/mod.ts";
@@ -35,11 +35,9 @@ const app = new Application<StateContext>();
 
 app.addEventListener("listen", ({ port }) => {
   logger.info(
-    `Server is Ready and Listen on ${
-      configs.general.hostname == "localhost" ? "http" : "https"
-    }://${configs.general.hostname}:${port} || ${formatTime(
-      Date.now() - start
-    )}`
+    `Server is Ready and Listen on ${configs.general.hostname == "localhost" ? "http" : "https"}://${
+      configs.general.hostname
+    }:${port} || ${formatTime(Date.now() - start)}`,
   );
 });
 
